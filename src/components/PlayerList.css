@@ -11,7 +11,7 @@
   align-items: flex-end;
 }
 
-svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.playerIcon.css-i4bv87-MuiSvgIcon-root {
+.player-card svg {
   display: none;
 }
 

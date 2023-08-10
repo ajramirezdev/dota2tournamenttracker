@@ -42,7 +42,7 @@ const TeamPage = () => {
     <div className="team-page">
       <div className="team-header">
         <div className="team-container">
-          <Link onClick={loading} to="..">
+          <Link onLoad={loading} to="..">
             <img className="back-btn" src={arrow} alt="purple arrow" />
           </Link>
           {team.logo_url ? (

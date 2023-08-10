@@ -1,0 +1,103 @@
+.team-list {
+  margin-bottom: 30px;
+}
+
+.team-link {
+  text-decoration: none;
+  color: #d3d7da;
+}
+
+.team-card {
+  display: flex;
+  padding: 10px 15px;
+  gap: 10px;
+  border-bottom: 1px solid #353535;
+}
+
+.team-card:hover {
+  background-color: #0c0c0c;
+  color: #ad4bd5;
+}
+
+.team-logo {
+  height: 70px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+
+.team-id {
+  color: #767676;
+  font-size: 11px;
+  position: absolute;
+  z-index: -3;
+  top: 22px;
+}
+
+.team-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.win-loss {
+  font-size: 13px;
+  color: #767676;
+}
+
+@media only screen and (min-width: 768px) {
+  .team-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px 15px 0 15px;
+    gap: 15px;
+  }
+
+  .team-card {
+    padding: 20px 15px 10px;
+    border: 1px solid #353535;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: space-between;
+    border-radius: 3px;
+    max-width: 172px;
+    text-align: center;
+  }
+
+  .team-name {
+    position: absolute;
+    top: -20px;
+  }
+
+  .team-id {
+    top: 15px;
+  }
+
+  .team-logo {
+    height: 90px;
+  }
+
+  .team-info {
+    width: 100%;
+    align-items: center;
+  }
+
+  .win-loss {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .team-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

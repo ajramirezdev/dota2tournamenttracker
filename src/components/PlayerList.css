@@ -1,0 +1,58 @@
+.player-list {
+  margin-bottom: 30px;
+}
+
+.player-card {
+  border-bottom: 1px solid #353535;
+  padding: 15px 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.playerIcon.css-i4bv87-MuiSvgIcon-root {
+  display: none;
+}
+
+.player-ign {
+  font-size: 15px;
+  color: #ad4bd5;
+}
+
+.player-id {
+  color: #767676;
+  font-size: 10px;
+  position: absolute;
+}
+
+.player-stats {
+  color: #767676;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .player-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    padding: 10px 0 10px 15px;
+    border-bottom: 1px solid #353535;
+  }
+
+  .player-list .player-card {
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #353535;
+    border-radius: 3px;
+    padding: 15px 20px 15px 20px;
+  }
+
+  .player-stats {
+    margin-top: 20px;
+  }
+
+  svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.playerIcon.css-i4bv87-MuiSvgIcon-root {
+    display: block;
+  }
+}

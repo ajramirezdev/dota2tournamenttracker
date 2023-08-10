@@ -1,0 +1,60 @@
+.league-list {
+  text-decoration: none;
+  color: #d3d7da;
+  
+}
+
+.league-list:hover {
+  color: #ad4bd5;
+}
+
+.league-info {
+  padding: 25px 30px;
+}
+
+.league-card img {
+  object-fit: cover;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+  
+}
+
+.league-card {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #353535;
+}
+
+.league-card:hover {
+  background-color: #0c0c0c;
+}
+
+.league-name {
+  font-size: 18px;
+}
+
+.league-id {
+  color: #767676;
+  font-size: 11px;
+  position: absolute;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .league-list-container {
+    max-width: 824px;
+    margin-left: 30px;
+  }
+
+  .league-card {
+    position: relative;
+  }
+} 
+
+@media only screen and (min-width: 1120px) { 
+  .league-list-container {
+    margin-left: 200px;
+  }
+}

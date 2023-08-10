@@ -1,0 +1,97 @@
+.league-page {
+  color: #d3d7da;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.league-header {
+  position: sticky;
+  top: 0;
+  padding: 15px 15px 30px 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 4px;
+  background-color: #121212;
+  margin-bottom: 30px;
+  z-index: 3;
+  background-image: url('../assets/main-img.png');
+  background-size: cover;
+}
+
+.back-btn {
+  width: 40px;
+  border: 1px solid #1e1e1e;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  padding: 8px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.back-btn:hover {
+  border-color: #898d90;
+}
+
+.league-page-name {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ad4bd5;
+  margin-top: 30px;
+}
+
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 10px 15px;
+  align-items: flex-end;
+  border-bottom: 1px solid #353535;
+}
+
+.collapse-text {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.load-more-container {
+  display: flex;
+  padding: 10px 0;
+  position: relative;
+}
+
+.load-more-container button {
+  margin: 0 auto;
+  padding: 5px 10px;
+  background-color: #ad4bd5;
+  border: none;
+  border-radius: 3px;
+  color: #d3d7da;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.load-more-container button:hover {
+  background-color: #cc59fa;
+}
+
+.back-to-top-btn {
+  position: absolute;
+  right: 5%;
+}
+
+.back-to-top-btn svg:hover {
+  color: #cc59fa;
+}
+
+@media only screen and (min-width: 768px) {
+  .league-header {
+    position: static;
+    height: 300px;
+  }
+
+  .league-page-name {
+    font-size: 40px;
+    margin-top: 140px;
+  }
+
+  .collapse-text {
+    font-size: 26px;
+  }
+}

@@ -8,6 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { Backdrop, CircularProgress } from "@mui/material";
 import VerticalAlignTopIcon from "@mui/icons-material/VerticalAlignTop";
+import arrowImg from "../assets/right-arrow.png";
 
 function LeaguePage() {
   const { matches, teams } = useLoaderData();
@@ -42,11 +43,7 @@ function LeaguePage() {
         <div className="league-page">
           <div className="league-header">
             <Link to={"/"}>
-              <img
-                className="back-btn"
-                src="../src/assets/right-arrow.png"
-                alt="purple arrow"
-              />
+              <img className="back-btn" src={arrowImg} alt="purple arrow" />
             </Link>
             <div className="league-page-name">
               {params.leagueName.replaceAll("_", " ")}

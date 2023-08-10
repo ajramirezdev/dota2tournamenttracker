@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./LeagueList.css";
+import arrowImg from "../assets/right-arrow.png";
 
 const LeagueList = ({ list, loading }) => {
   return (
@@ -17,11 +18,7 @@ const LeagueList = ({ list, loading }) => {
                 <div className="league-name">{league.name}</div>
                 <div className="league-id">LEAGUE ID: {league.leagueid}</div>
               </div>
-              <img
-                src="src/assets/right-arrow.png"
-                alt="purple right arrow"
-                width="20px"
-              />
+              <img src={arrowImg} alt="purple right arrow" width="20px" />
             </div>
           </Link>
         );
